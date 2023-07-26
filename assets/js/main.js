@@ -13,8 +13,8 @@ function meuEscopo(){
         
         // Verificação se o peso ou altura é válido
         // Caso a converção retorne um NaN ira para as condições
-        const peso = Number(inputPeso.value);
-        const altura = Number(inputAltura.value);
+        const peso = Number(inputPeso.value.replace(",","."));
+        const altura = Number(inputAltura.value.replace(",","."));
 
         
         if(!peso && !altura){
